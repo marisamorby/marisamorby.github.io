@@ -85,12 +85,16 @@ border-bottom: 1px solid #D3D3D3;
 }
 
 .intro-contact-link{
-color: #656565;
+color: #656565 !important;
 font-weight: bold;  
 }
 
 .icons{
   color: #403F3F;
+}
+
+.carousel-spacing{
+  margin-top: 20px;
 }
 
 .see-project-button{
