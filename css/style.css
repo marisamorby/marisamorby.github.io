@@ -14,35 +14,51 @@ p {
   color: #656565;
   font-size: 22px;
 }
-
+/* Move the text down on the navigation bar */
 .row{
   padding-top: 30px;
 }
 
+/* Style the navigation bar */
+
 .site-header {
+  width: 100%;
   padding-top: 20px;
   padding-bottom: 1px;
   background-color: white;
 }
 
+/* Style the navigation text */
+
 .home-link,.contact-link {
   font-weight: bold;
   display: inline;
-  color: #403F3F;
-  
+  color: #403F3F;  
 }
+
+.home-link:hover, .contact-link:hover {
+  color: #403F3F;
+}
+  
+
+/* Float text to the right */
 .right-aligned{
   float: right;
 }
+
+/* Style color of the navigation text */
 
 .navbar-brand {
   color: #403F3F;
 
 }
+
+/* Style color of the right side navigation text */
 .navbar-right {
   color: #403F3F;
 }
 
+/* Style the line separator */
 .line-separator{
 height: 1px;
 border-bottom: 1px solid #D3D3D3;
@@ -52,6 +68,7 @@ border-bottom: 1px solid #D3D3D3;
   box-shadow: 0 6px 3px -6px #b4b4b4;
   opacity: 0.5;
 }
+
 .introduction {
   margin-top: 40px;
 }
@@ -67,30 +84,66 @@ border-bottom: 1px solid #D3D3D3;
   padding-bottom: 5px;
 }
 
+.intro-contact-link{
+color: #656565;
+font-weight: bold;  
+}
+
 .icons{
   color: #403F3F;
 }
 
-.portfolio-summary{
-  
-}
-
-.portfolio-text{
-  
-}
-.see-case-study-button{
+.see-project-button{
   background: #01a7a7;
   min-width: 280px;
   max-width: 280px;
-  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
-.see-case-study-button:hover{
+.see-project-button:hover{
   background: #008080;
+}
+
+.see-project-button:active, .see-project-button:focus {
+  background: #008080;
+  outline: 0;
 }
 
 .btn-lg{
   border-radius: 24px;
   border:0px solid transparent;
+}
+
+.portfolio-title, .portfolio-text, .see-project-button {
+    text-align: center;
+  }
+
+@media (min-width: 768px){
+  .see-project-button {
+   float: right;
+   margin-top: 45px;
+  }
+  .portfolio-title, .portfolio-text{
+    text-align: left;
+  }
+    
+}
+
+.scroll-link{
+   font-weight: bold;
+   text-align: center;
+   font-size: 14px;
+   padding-top: 10px;
+}
+
+.link-color{
+     color: #403F3F !important;
+}
+.copyright-info{
+   text-align: center;
+   font-size: 11px;
+   padding-top: 10px;
 }
 
