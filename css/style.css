@@ -19,6 +19,11 @@ p {
   padding-top: 30px;
 }
 
+/* Add space to top of carousel */
+.carousel-style{
+  margin-top: 15px;
+}
+
 /* Style the navigation bar */
 
 .site-header {
@@ -69,6 +74,8 @@ border-bottom: 1px solid #D3D3D3;
   opacity: 0.5;
 }
 
+/* Style the Intro text and links */
+
 .introduction {
   margin-top: 40px;
 }
@@ -93,12 +100,18 @@ font-weight: bold;
   color: #403F3F;
 }
 
-.carousel-spacing{
-  margin-top: 20px;
+/* Style the carousel */
+.carousel-style{
+  margin-top: 70px;
 }
 
+.btn-primary:active:focus{
+  background-color: #AD1AD6;
+}
+
+/* Style the project buttons */
 .see-project-button{
-  background: #01a7a7;
+  background-color: #CE1FFF;
   min-width: 280px;
   max-width: 280px;
   margin-left: auto;
@@ -107,22 +120,40 @@ font-weight: bold;
 }
 
 .see-project-button:hover{
-  background: #008080;
+  background: #AD1AD6;
 }
 
 .see-project-button:active, .see-project-button:focus {
-  background: #008080;
+  background-color: #AD1AD6;
   outline: 0;
 }
 
 .btn-lg{
   border-radius: 24px;
   border:0px solid transparent;
+  margin-top: 10px;
 }
 
+/* Set portfolio text positions */
+.title-position{
+  padding-top: 50px;
+}
 .portfolio-title, .portfolio-text, .see-project-button {
     text-align: center;
   }
+
+/* Take off background and fade on carousel */
+.carousel-control, .carousel-control:active,.carousel-control:focus, .carousel-control:hover {
+  opacity: 1;
+  color: #403F3F;
+}
+.carousel-control.left, .carousel-control.right{
+  background-image: none;
+}
+.carousel{
+  max-width: 900px;
+  margin: 0 auto;
+}
 
 @media (min-width: 768px){
   .see-project-button {
